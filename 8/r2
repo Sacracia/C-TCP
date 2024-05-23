@@ -1,0 +1,21 @@
+===SERVER===
+~/IDZ/8$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/IDZ/8$ 
+
+===LOGGER1===
+~/IDZ/8$ ./l 127.0.0.1 7
+^CEXIT
+~/IDZ/8$ 
+
+===LOGGER2===
+~/IDZ/8$ ./l 127.0.0.1 7
+^CEXIT
+~/IDZ/8$ 
+
+===CLIENT===
+~/IDZ/8$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/IDZ/8$ 

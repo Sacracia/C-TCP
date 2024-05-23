@@ -1,0 +1,87 @@
+========SERVER===========
+~/IDZ/universal$ ./s 7 f1
+Logger 0 connected
+Logger 1 connected
+Worker 0 connected
+Sending 'H' 'e' to worker 0
+Worker 1 connected
+Sending 'l' 'l' to worker 1
+After worker 0 sent codes 48 65
+0x48 0x65 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 
+Sending 'o' ' ' to worker 0
+After worker 0 sent codes 6f 20
+0x48 0x65 ?? ?? 0x6f 0x20 ?? ?? ?? ?? ?? ?? 
+Sending 'w' 'o' to worker 0
+After worker 1 sent codes 6c 6c
+0x48 0x65 0x6c 0x6c 0x6f 0x20 ?? ?? ?? ?? ?? ?? 
+Sending 'r' 'l' to worker 1
+After worker 1 sent codes 72 6c
+0x48 0x65 0x6c 0x6c 0x6f 0x20 ?? ?? 0x72 0x6c ?? ?? 
+Sending 'd' '!' to worker 1
+After worker 0 sent codes 77 6f
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c ?? ?? 
+After worker 1 sent codes 64 21
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c 0x64 0x21 
+All workers are dead
+Server is shutting down...
+~/IDZ/universal$ 
+
+========LOGGER1===========
+~/IDZ/universal$ ./l 127.0.0.1 7
+Sending 'H' 'e' to worker 0
+Sending 'l' 'l' to worker 1
+After worker 0 sent codes 48 65
+0x48 0x65 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 
+Sending 'o' ' ' to worker 0
+After worker 0 sent codes 6f 20
+0x48 0x65 ?? ?? 0x6f 0x20 ?? ?? ?? ?? ?? ?? 
+Sending 'w' 'o' to worker 0
+After worker 1 sent codes 6c 6c
+0x48 0x65 0x6c 0x6c 0x6f 0x20 ?? ?? ?? ?? ?? ?? 
+Sending 'r' 'l' to worker 1
+After worker 1 sent codes 72 6c
+0x48 0x65 0x6c 0x6c 0x6f 0x20 ?? ?? 0x72 0x6c ?? ?? 
+Sending 'd' '!' to worker 1
+After worker 0 sent codes 77 6f
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c ?? ?? 
+After worker 1 sent codes 64 21
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c 0x64 0x21 
+Received exit
+EXIT
+~/IDZ/universal$ 
+
+========LOGGER2===========
+~/IDZ/universal$ ./l 127.0.0.1 7
+Sending 'H' 'e' to worker 0
+Sending 'l' 'l' to worker 1
+After worker 0 sent codes 48 65
+0x48 0x65 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 
+Sending 'o' ' ' to worker 0
+After worker 0 sent codes 6f 20
+0x48 0x65 ?? ?? 0x6f 0x20 ?? ?? ?? ?? ?? ?? 
+Sending 'w' 'o' to worker 0
+After worker 1 sent codes 6c 6c
+0x48 0x65 0x6c 0x6c 0x6f 0x20 ?? ?? ?? ?? ?? ?? 
+Sending 'r' 'l' to worker 1
+After worker 1 sent codes 72 6c
+0x48 0x65 0x6c 0x6c 0x6f 0x20 ?? ?? 0x72 0x6c ?? ?? 
+Sending 'd' '!' to worker 1
+After worker 0 sent codes 77 6f
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c ?? ?? 
+After worker 1 sent codes 64 21
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c 0x64 0x21 
+Received exit
+EXIT
+~/IDZ/universal$ 
+
+========CLIENT1===========
+~/IDZ/universal$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/IDZ/universal$ 
+
+========CLIENT2===========
+~/IDZ/universal$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/IDZ/universal$ 

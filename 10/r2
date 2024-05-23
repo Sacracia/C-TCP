@@ -1,0 +1,12 @@
+========SERVER===========
+~/IDZ/10$ ./s 7 f2
+Worker 0 connected
+All workers are dead
+Server is shutting down...
+~/IDZ/10$ 
+
+========CLIENT1===========
+~/IDZ/10$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/IDZ/10$ 

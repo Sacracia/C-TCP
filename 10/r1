@@ -1,0 +1,37 @@
+========SERVER===========
+~/IDZ/10$ ./s 7 f1
+Worker 0 connected
+After worker 0 sent codes 48 65
+0x48 0x65 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 
+After worker 0 sent codes 6c 6c
+0x48 0x65 0x6c 0x6c ?? ?? ?? ?? ?? ?? ?? ?? 
+After worker 0 sent codes 6f 20
+0x48 0x65 0x6c 0x6c 0x6f 0x20 ?? ?? ?? ?? ?? ?? 
+Worker 1 connected
+After worker 0 sent codes 77 6f
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f ?? ?? ?? ?? 
+After worker 1 sent codes 72 6c
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c ?? ?? 
+After worker 0 sent codes 64 21
+0x48 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c 0x64 0x21 
+All workers are dead
+Server is shutting down...
+~/IDZ/10$ 
+
+========CLIENT1===========
+~/IDZ/10$ ./c 127.0.0.1 7
+Coding 'H' 'e'
+Coding 'l' 'l'
+Coding 'o' ' '
+Coding 'w' 'o'
+Coding 'd' '!'
+Received exit package
+EXIT
+~/IDZ/10$ 
+
+========CLIENT2===========
+~/IDZ/10$ ./c 127.0.0.1 7
+Coding 'r' 'l'
+Received exit package
+EXIT
+~/IDZ/10$ 

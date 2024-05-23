@@ -1,0 +1,14 @@
+===SERVER===
+~/FAKEIDZ/4-5$ ./s 7 f2
+Worker 0 connected
+All workers are dead
+Server is shutting down...
+~/FAKEIDZ/4-5$ 
+
+
+===CLIENT1===
+~/FAKEIDZ/4-5$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/FAKEIDZ/4-5$ 
+

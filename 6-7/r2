@@ -1,0 +1,18 @@
+===SERVER===
+~/IDZ/6-7$ ./s 7 f2
+Logger 0 connected
+Worker 0 connected
+All workers are dead
+Server is shutting down...
+~/IDZ/6-7$ 
+
+===LOGGER===
+~/IDZ/6-7$ ./l 127.0.0.1 7
+^CEXIT
+~/IDZ/6-7$ 
+
+===CLIENT===
+~/IDZ/6-7$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/IDZ/6-7$ 

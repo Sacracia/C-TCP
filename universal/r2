@@ -1,0 +1,26 @@
+========SERVER===========
+~/IDZ/universal$ ./s 7 f2
+Logger 0 connected
+Logger 1 connected
+Worker 0 connected
+All workers are dead
+Server is shutting down...
+~/IDZ/universal$ 
+
+========LOGGER1===========
+~/IDZ/universal$ ./l 127.0.0.1 7
+Received exit
+EXIT
+~/IDZ/universal$ 
+
+========LOGGER2===========
+~/IDZ/universal$ ./l 127.0.0.1 7
+Received exit
+EXIT
+~/IDZ/universal$ 
+
+========CLIENT1===========
+~/IDZ/universal$ ./c 127.0.0.1 7
+Received exit package
+EXIT
+~/IDZ/universal$ 
